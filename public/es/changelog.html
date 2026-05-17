@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Changelog — iotec</title>
+<meta name="description" content="Historial de versiones y notas de lanzamiento de iotec Core y iotec GEX.">
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=9">
+<link rel="stylesheet" href="/assets/style.css?v=11">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/es/" class="brand"><img src="/assets/banner-dark.svg?v=9" alt="iotec.dev" class="brand-banner"></a>
+    <nav class="nav-links">
+      <a href="/es/#products">Productos</a>
+      <a href="/es/#pricing">Precios</a>
+      <a href="/es/#faq">FAQ</a>
+      <a href="/changelog.html" class="nav-lang">EN</a>
+      <a href="mailto:soporte@iotec.dev" class="nav-cta">Soporte</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section legal">
+  <div class="container legal-container">
+    <a href="/es/" class="legal-back">← Volver al inicio</a>
+    <h1>Changelog</h1>
+    <p class="legal-updated">Última actualización: 2026-05-17</p>
+
+    <p>
+      Qué hay nuevo en cada producto iotec. Los clientes actuales reciben correo
+      al lanzarse una nueva versión. <strong>Las actualizaciones son siempre
+      gratis</strong> — sin re-compra para iotec Core, sin interrupción del
+      servicio para suscriptores de iotec GEX.
+    </p>
+
+    <h2>iotec GEX</h2>
+
+    <h3>v0.3.1 — 2026-05-17</h3>
+    <ul>
+      <li><strong>UX pulido.</strong> El campo "API Token" en las propiedades del indicador ya no está visible — tu license key se usa automáticamente para el servicio GEX. Un solo secreto, una sola vez.</li>
+      <li><strong>Estado del indicador en el título del chart.</strong> El nombre del indicador ahora muestra estados claros: <code>(Loading...)</code>, <code>(Market closed)</code>, <code>(API offline — retrying)</code>, <code>(HTTP error — check token)</code>. Se acabó adivinar qué pasa.</li>
+      <li>El título del chart ahora se refresca correctamente con mercado cerrado (antes se quedaba pegado en "Loading...").</li>
+    </ul>
+
+    <h3>v0.3.0 — 2026-05-17</h3>
+    <ul>
+      <li><strong>Un solo secreto para todo.</strong> Tu license key ahora sirve también como token de acceso al servicio de datos GEX. Sin tokens separados — solo la license key.</li>
+      <li>Modelo de suscripción: $49/mes con 7 días de prueba gratis (sin tarjeta).</li>
+    </ul>
+
+    <h3>v0.2.0 — 2026-05-17</h3>
+    <ul>
+      <li>Interno: extracción de HTTP, parsing JSON y cifrado de credenciales al DLL ofuscado. Mejor protección del flujo de datos.</li>
+    </ul>
+
+    <h3>v0.1.0 — 2026-05-16</h3>
+    <ul>
+      <li>Lanzamiento inicial. Niveles de Gamma Exposure en tiempo real en charts de NinjaTrader 8, alimentados desde un cálculo server-side con data de opciones en vivo.</li>
+      <li>Key levels (zero gamma, call wall, put wall), barras GEX históricas, histograma de convexidad, conversión de futuros para ES/NQ/GC.</li>
+    </ul>
+
+    <h2>iotec Core</h2>
+
+    <h3>v0.5.0 — 2026-05-16</h3>
+    <ul>
+      <li>Estadísticas de big-trade (media, desviación estándar) calculadas en C++ nativo para mayor performance.</li>
+    </ul>
+
+    <h3>v0.4.4 — 2026-05-16</h3>
+    <ul>
+      <li>Detección de revocación de licencia más rápida (heartbeat cada 15 minutos). Si tu licencia se revoca, el indicador lo detecta en minutos y se detiene limpiamente con un mensaje claro.</li>
+    </ul>
+
+    <h3>v0.4.0 — 2026-05-16</h3>
+    <ul>
+      <li>Interno: protocolo de handshake entre componentes managed y native. Mejor resistencia a manipulación.</li>
+    </ul>
+
+    <h3>v0.3.0 — 2026-05-16</h3>
+    <ul>
+      <li>Detección de imbalance (diagonal bid/ask) y cálculo de radio de big-trade portados a C++ nativo, mejor velocidad y protección.</li>
+    </ul>
+
+    <h3>v0.1.0 — 2026-05-15</h3>
+    <ul>
+      <li>Lanzamiento inicial. Toolkit completo de Order Flow en NT8: footprint con cascada de clasificación bid/ask, volumen profile, delta, marks de big-trade. Sin requerir suscripción a NinjaTrader OrderFlow+.</li>
+    </ul>
+
+    <h2>Convenciones</h2>
+    <p>
+      Las versiones siguen <a href="https://semver.org" target="_blank" rel="noopener">semantic versioning</a>:
+      <code>MAJOR.MINOR.PATCH</code>. PATCH es un bug fix, MINOR es feature o mejora,
+      MAJOR indica breaking changes (muy raros y siempre anunciados con antelación por correo).
+    </p>
+
+    <h2>Contacto</h2>
+    <p><a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-about">
+      <div class="footer-brand"><img src="/assets/banner-dark.svg?v=9" alt="iotec.dev" class="brand-banner"></div>
+      <div class="footer-tag">Indicadores profesionales para NT8</div>
+      <div class="footer-socials">
+        <a href="https://x.com/iotec_dev" target="_blank" rel="noopener" aria-label="X / Twitter" title="X / Twitter">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        </a>
+        <a href="https://t.me/iotecdotdev" target="_blank" rel="noopener" aria-label="Telegram channel" title="Telegram channel">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295l.214-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.64-.203-.658-.643.135-.953l11.566-4.458c.538-.196 1.006.128.832.94z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-col-title">Productos</div>
+        <a href="/es/#products">iotec Core</a>
+        <a href="/es/#products">iotec GEX</a>
+        <a href="/es/#pricing">Precios</a>
+        <a href="/es/changelog.html">Changelog</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Soporte</div>
+        <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a>
+        <a href="/es/support.html">Política de soporte</a>
+        <a href="/es/#faq">FAQ</a>
+        <a href="https://stats.uptimerobot.com/Sg7wWX6wLz" target="_blank" rel="noopener"><span class="status-dot" id="iotecStatusDot" title="Comprobando…"></span>Estado</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Legal</div>
+        <a href="/es/disclaimer.html">Disclaimer de riesgo</a>
+        <a href="/es/terms.html">Términos</a>
+        <a href="/es/privacy.html">Privacidad</a>
+        <a href="/es/refunds.html">Reembolsos</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2026 iotec. NinjaTrader es marca registrada de NinjaTrader, LLC. iotec no está afiliado con NinjaTrader.</div>
+  </div>
+</footer>
+
+<script src="/assets/status.js?v=1" defer></script>
+</body>
+</html>
