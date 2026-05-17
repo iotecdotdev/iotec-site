@@ -159,6 +159,21 @@ a:hover { opacity: .8; }
 .footer-col a:hover { color: var(--accent); opacity: 1; }
 .footer-bottom { border-top: 1px solid var(--border); padding: 20px 0; color: var(--muted); font-size: .75rem; text-align: center; }
 
+/* Status indicator (UptimeRobot) */
+.status-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #888;
+  margin-right: 6px;
+  vertical-align: middle;
+  transition: background 0.3s ease;
+}
+.status-dot.up      { background: #48bb78; box-shadow: 0 0 6px rgba(72, 187, 120, .6); }
+.status-dot.down    { background: #f56565; box-shadow: 0 0 6px rgba(245, 101, 101, .6); }
+.status-dot.partial { background: #ed8936; box-shadow: 0 0 6px rgba(237, 137, 54, .6); }
+
 /* ============== LEGAL PAGES ============== */
 .legal { padding: 60px 0 80px; }
 .legal-container { max-width: 760px; }
