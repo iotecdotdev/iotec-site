@@ -37,8 +37,8 @@ a:hover { opacity: .8; }
   border-bottom: 1px solid var(--border);
 }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-.brand { display: inline-flex; align-items: center; gap: 8px; color: var(--text); font-weight: 700; font-size: 1.05rem; letter-spacing: -0.02em; }
-.brand-dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, var(--accent), var(--accent-2)); box-shadow: 0 0 12px rgba(99, 179, 237, 0.5); }
+.brand { display: inline-flex; align-items: center; gap: 10px; color: var(--text); font-weight: 700; font-size: 1.05rem; letter-spacing: -0.02em; }
+.brand-logo { width: 28px; height: 28px; }
 .nav-links { display: flex; align-items: center; gap: 28px; }
 .nav-links a { color: var(--muted); font-size: .87rem; font-weight: 500; }
 .nav-links a:hover { color: var(--text); opacity: 1; }
