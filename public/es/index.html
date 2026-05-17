@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iotec — Indicadores profesionales de Order Flow y GEX para NinjaTrader 8</title>
+<meta name="description" content="Indicadores profesionales para NinjaTrader 8 construidos desde cero. Order Flow, footprint, gamma exposure. Sin suscripción a OrderFlow+.">
+<meta name="theme-color" content="#0f1117">
+<meta property="og:title" content="iotec — Indicadores profesionales para NT8">
+<meta property="og:description" content="Indicadores de Order Flow y Gamma Exposure profesionales. Construidos desde tick data. Motor nativo en C++.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://iotec.dev/es/">
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=6">
+<link rel="icon" type="image/svg+xml" href="/assets/logo.svg?v=6">
+<link rel="stylesheet" href="/assets/style.css?v=6">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/es/" class="brand">
+      <img src="/assets/banner-dark.svg?v=6" alt="iotec.dev" class="brand-banner">
+    </a>
+    <nav class="nav-links">
+      <a href="#products">Productos</a>
+      <a href="#why">Por qué iotec</a>
+      <a href="#pricing">Precios</a>
+      <a href="#faq">FAQ</a>
+      <a href="/" class="nav-lang">EN</a>
+      <a href="mailto:soporte@iotec.dev" class="nav-cta">Soporte</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-eyebrow">Construido para traders serios</div>
+    <h1>Indicadores profesionales de Order Flow y Gamma Exposure<br>para NinjaTrader 8.</h1>
+    <p class="hero-sub">
+      Herramientas pro construidas desde tick data crudo — sin necesidad de suscripción a OrderFlow+.
+      Motor nativo en C++. Protección de licencia multi-capa.
+    </p>
+    <div class="hero-cta">
+      <a href="#products" class="btn btn-primary">Ver productos</a>
+      <a href="#pricing" class="btn btn-ghost">Precios</a>
+    </div>
+    <div class="hero-trust">
+      <span class="trust-item">✓ Sin NT OrderFlow+</span>
+      <span class="trust-item">✓ Motor nativo x86_64</span>
+      <span class="trust-item">✓ Soporte directo del creador</span>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Productos</div>
+      <h2>Dos suites. Un servidor de licencias. Construido para protección y confiabilidad.</h2>
+    </div>
+
+    <div class="product-grid">
+
+      <article class="product-card">
+        <div class="product-tag">Order Flow</div>
+        <h3>iotec Core</h3>
+        <p class="product-tagline">El toolkit completo de Order Flow, reconstruido desde cero sobre tick data crudo.</p>
+        <ul class="feature-list">
+          <li><strong>Footprint</strong> con cascada de clasificación bid/ask en C++ nativo</li>
+          <li><strong>Imbalances</strong> diagonales (factor y diferencia), detección de stacked</li>
+          <li><strong>Big trades</strong> con dimensionado por z-score, mean/stddev</li>
+          <li><strong>Volume + Delta profiles</strong> por sesión, composite estilo Sierra</li>
+          <li><strong>VWAP con bandas</strong>, niveles de sesión, OHLC día previo</li>
+          <li><strong>Toolbar custom</strong> integrado en el chart para toggles en runtime</li>
+        </ul>
+        <div class="product-foot">
+          <div class="price">$497 <span class="price-period">USD / pago único</span></div>
+          <a href="https://store.iotec.dev/buy/iotec-core" class="btn btn-primary">Comprar iotec Core</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-tag tag-purple">Opciones</div>
+        <h3>iotec GEX</h3>
+        <p class="product-tagline">Niveles de Gamma Exposure en tiempo real, calculados sobre data viva de opciones.</p>
+        <ul class="feature-list">
+          <li><strong>Niveles GEX</strong> calculados server-side desde cadenas de opciones en vivo</li>
+          <li><strong>Key levels</strong> destacados (zero gamma, walls)</li>
+          <li><strong>Filtros DTE</strong>: exacto o máximo días-a-expiración</li>
+          <li><strong>Actualización en tiempo real</strong> via tunnel cifrado</li>
+          <li><strong>Cobertura</strong>: SPY, QQQ, IWM y principales índices líquidos</li>
+          <li><strong>Token cifrado</strong> localmente para credenciales API</li>
+        </ul>
+        <div class="product-foot">
+          <div class="price">$297 <span class="price-period">USD / pago único</span></div>
+          <a href="https://store.iotec.dev/buy/iotec-gex" class="btn btn-primary">Comprar iotec GEX</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section id="why" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Por qué iotec</div>
+      <h2>Decisiones de ingeniería que importan.</h2>
+    </div>
+
+    <div class="why-grid">
+      <div class="why-item">
+        <div class="why-icon">⚙</div>
+        <h4>Construido desde tick data</h4>
+        <p>iotec Core reconstruye todo el stack de Order Flow desde ticks crudos. Sin dependencia del add-on OrderFlow+ de NinjaTrader ($1,500+).</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">⚡</div>
+        <h4>Motor nativo</h4>
+        <p>El código crítico del hot path (clasificación de trades, reglas de imbalance) corre en C++ x86_64 compilado — no en .NET interpretado.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">🔒</div>
+        <h4>Protección multi-capa</h4>
+        <p>Ofuscación + servidor de licencias + hash gate del assembly + handshake nativo. Tu indicador sigue siendo tuyo, tu competencia sigue siendo tu competencia.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">↻</div>
+        <h4>Desarrollo activo</h4>
+        <p>Actualizaciones regulares con nuevas features y refinamientos. Tu licencia sigue activa entre versiones.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">✉</div>
+        <h4>Soporte directo</h4>
+        <p>El correo va directo al creador. Sin tickets, sin respuestas robotizadas. Respuesta en 24-48 horas.</p>
+      </div>
+      <div class="why-item">
+        <div class="why-icon">💻</div>
+        <h4>Un dispositivo, política justa</h4>
+        <p>Cada licencia se vincula a una máquina. ¿Cambias de PC? Reset gratis cada 6 meses — solo envíanos un correo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Precios</div>
+      <h2>Simple. Pago único. Sin suscripciones, sin sorpresas.</h2>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <div class="pricing-name">iotec Core</div>
+        <div class="pricing-amount">$497</div>
+        <div class="pricing-note">Suite completa de Order Flow. Updates de por vida.</div>
+        <a href="https://store.iotec.dev/buy/iotec-core" class="btn btn-primary btn-block">Comprar</a>
+      </div>
+      <div class="pricing-card pricing-featured">
+        <div class="pricing-name">Bundle</div>
+        <div class="pricing-amount">$697 <span class="pricing-strike">$794</span></div>
+        <div class="pricing-note">iotec Core + iotec GEX. Ahorra $97.</div>
+        <a href="mailto:soporte@iotec.dev?subject=Bundle%20iotec%20Core%20%2B%20GEX" class="btn btn-primary btn-block">Email para bundle</a>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-name">iotec GEX</div>
+        <div class="pricing-amount">$297</div>
+        <div class="pricing-note">Niveles GEX en tiempo real. Data server-side.</div>
+        <a href="https://store.iotec.dev/buy/iotec-gex" class="btn btn-primary btn-block">Comprar</a>
+      </div>
+    </div>
+
+    <p class="pricing-foot">Precios en USD. Pagos procesados por Lemon Squeezy (Merchant of Record). IVA/impuestos calculados automáticamente por país.</p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section section-alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">FAQ</div>
+      <h2>Lo que la gente pregunta antes de comprar.</h2>
+    </div>
+
+    <div class="faq-list">
+      <details class="faq-item">
+        <summary>¿Necesito el add-on OrderFlow+ de NinjaTrader?</summary>
+        <p>No. iotec Core reconstruye todo el stack OF desde tick data crudo. Solo necesitas una licencia NT8 normal (gratis para simulación, lifetime para trading real).</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Qué versiones de NinjaTrader soportan?</summary>
+        <p>NinjaTrader 8 (cualquier release reciente con SharpDX). Probado en 8.1.4+. No soportamos NinjaTrader 7.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Puedo instalarlo en varias computadoras?</summary>
+        <p>Cada licencia se vincula a un dispositivo en la primera activación. Si necesitas mover a otra PC (upgrade de hardware, reinstalación de Windows, etc.), envía correo a soporte — 1 reset gratis cada 6 meses.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Qué pasa si el indicador no me funciona?</summary>
+        <p>Envíanos correo en los primeros 14 días después de la compra y procesamos reembolso completo sin preguntas.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Cómo recibo actualizaciones?</summary>
+        <p>Cuando publicamos una nueva versión, recibes correo con el changelog y link de descarga actualizado. Tu licencia sigue funcionando — sin re-compra.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿La data que se envía a su servidor es segura?</summary>
+        <p>El indicador envía solo tu license key, un hash anónimo del dispositivo, y el hash del DLL para detección de tampering. Nunca recolectamos tus trades, posiciones, watchlists, ni configuraciones de chart.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Qué pasa si su servidor se cae?</summary>
+        <p>El indicador cachea la validación localmente con un periodo de gracia de 72 horas. Aunque nuestros servidores estén temporalmente inalcanzables, sigues operando sin interrupción.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Pueden desarrollarme un indicador custom?</summary>
+        <p>Posiblemente. Envíanos correo con tu especificación y cotizamos.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- RISK WARNING -->
+<section class="risk-warning">
+  <div class="container">
+    <strong>Aviso de riesgo:</strong> los indicadores iotec son herramientas de análisis técnico, no asesoría de inversión. El trading conlleva riesgo sustancial de pérdida. El rendimiento pasado no garantiza resultados futuros. Lee el <a href="/es/disclaimer.html">disclaimer completo</a> antes de usar.
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand"><img src="/assets/banner-dark.svg?v=6" alt="iotec.dev" class="brand-banner"></div>
+      <div class="footer-tag">Indicadores profesionales para NT8</div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-col-title">Productos</div>
+        <a href="#products">iotec Core</a>
+        <a href="#products">iotec GEX</a>
+        <a href="#pricing">Precios</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Soporte</div>
+        <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Legal</div>
+        <a href="/es/disclaimer.html">Disclaimer de riesgo</a>
+        <a href="/es/terms.html">Términos</a>
+        <a href="/es/privacy.html">Privacidad</a>
+        <a href="/es/refunds.html">Reembolsos</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2026 iotec. NinjaTrader es marca registrada de NinjaTrader, LLC. iotec no está afiliado con NinjaTrader.</div>
+  </div>
+</footer>
+
+</body>
+</html>

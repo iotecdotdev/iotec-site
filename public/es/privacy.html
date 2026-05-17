@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad — iotec</title>
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=6">
+<link rel="stylesheet" href="/assets/style.css?v=6">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/es/" class="brand"><img src="/assets/banner-dark.svg?v=6" alt="iotec.dev" class="brand-banner"></a>
+    <nav class="nav-links">
+      <a href="/es/#products">Productos</a>
+      <a href="/es/#pricing">Precios</a>
+      <a href="/es/#faq">FAQ</a>
+      <a href="/privacy.html" class="nav-lang">EN</a>
+      <a href="mailto:soporte@iotec.dev" class="nav-cta">Soporte</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section legal">
+  <div class="container legal-container">
+    <a href="/es/" class="legal-back">← Volver al inicio</a>
+    <h1>Política de Privacidad</h1>
+    <p class="legal-updated">Última actualización: 2026-05-17</p>
+
+    <h2>1. Quiénes somos</h2>
+    <p>
+      iotec es un desarrollador independiente de software construyendo herramientas
+      para NinjaTrader 8. Contacto: <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a>.
+    </p>
+
+    <h2>2. Datos que recolectamos</h2>
+    <h3>2.1 Del indicador (durante uso normal)</h3>
+    <ul>
+      <li><strong>License key</strong> — para validar tu suscripción.</li>
+      <li><strong>Device fingerprint</strong> — un hash SHA-256 anónimo derivado de
+        tu MachineGuid + serial BIOS + serial del motherboard. Es opaco y no se
+        puede revertir para identificar detalles de tu hardware.</li>
+      <li><strong>Assembly hash</strong> — SHA-256 de los DLLs iotec instalados,
+        para detección de tampering.</li>
+      <li><strong>IP pública</strong> — visible para nosotros, como en cualquier servicio web.</li>
+      <li><strong>Timestamp</strong> de cada activación y heartbeat.</li>
+    </ul>
+
+    <h3>2.2 Del sitio web / compra</h3>
+    <ul>
+      <li><strong>Correo y nombre</strong> — proporcionados en checkout via Lemon Squeezy.</li>
+      <li><strong>Datos estándar del navegador</strong> — user agent, referrer, etc.
+        cuando visitas iotec.dev (sin trackers terceros, sin scripts de analytics
+        en este momento).</li>
+    </ul>
+
+    <h2>3. Datos que NO recolectamos</h2>
+    <p>El indicador nunca envía a nuestros servidores:</p>
+    <ul>
+      <li>Tus posiciones, órdenes abiertas, P&L o balance de cuenta.</li>
+      <li>Los instrumentos que operas o vigilas.</li>
+      <li>Configuraciones de chart o data de workspace.</li>
+      <li>Tus credenciales de broker.</li>
+      <li>Cualquier contenido de tus trades o estrategias.</li>
+    </ul>
+
+    <h2>4. Dónde vive la data</h2>
+    <ul>
+      <li><strong>Servidor de licencias</strong>: hospedado en Europa (Contabo, Alemania).</li>
+      <li><strong>Servicio de email</strong>: Brevo (Sendinblue, basado en EU).</li>
+      <li><strong>Procesador de pagos</strong>: Lemon Squeezy (US, Merchant of Record compatible con GDPR).</li>
+      <li><strong>CDN/DNS</strong>: Cloudflare.</li>
+      <li>Backups: Cloudflare R2 (cifrados en reposo).</li>
+    </ul>
+
+    <h2>5. Data local en tu computadora</h2>
+    <p>
+      El indicador guarda tu license key localmente en
+      <code>%APPDATA%\iotec\license*.dat</code>, cifrada con Windows DPAPI atada
+      a tu cuenta de Windows. Solo tú, con tu sesión iniciada, puedes descifrarla.
+    </p>
+
+    <h2>6. Cómo usamos la data</h2>
+    <ul>
+      <li>Para validar tu licencia y prevenir uso no autorizado.</li>
+      <li>Para enviarte license keys, respuestas de soporte y actualizaciones de producto.</li>
+      <li>Para detectar tampering o abuso.</li>
+      <li>Para mejorar el producto (métricas agregadas, anónimas).</li>
+    </ul>
+    <p>No vendemos, alquilamos ni compartimos tu data con terceros para marketing.</p>
+
+    <h2>7. Tus derechos (GDPR / leyes similares)</h2>
+    <p>Tienes derecho a:</p>
+    <ul>
+      <li>Solicitar una copia de tu data.</li>
+      <li>Solicitar corrección o eliminación.</li>
+      <li>Retirar consentimiento.</li>
+      <li>Presentar queja ante tu autoridad local de protección de datos.</li>
+    </ul>
+    <p>Envía correo a <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a> para cualquier solicitud.</p>
+
+    <h2>8. Retención</h2>
+    <ul>
+      <li>Licencia + correo: mientras tu licencia esté activa + 12 meses tras la última actividad.</li>
+      <li>Logs del servidor: 90 días.</li>
+      <li>Backups: 90 días.</li>
+    </ul>
+
+    <h2>9. Seguridad</h2>
+    <p>
+      Usamos TLS para toda comunicación, backups cifrados, payloads de licencia
+      firmados con RSA, y servidores con acceso restringido. Ningún sistema es
+      100% seguro; hacemos lo mejor posible.
+    </p>
+
+    <h2>10. Cambios</h2>
+    <p>
+      Podemos actualizar esta política. Cambios materiales se anunciarán por
+      correo a licenciatarios activos cuando sea posible.
+    </p>
+
+    <h2>11. Contacto</h2>
+    <p>Dudas o solicitudes de data: <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand"><img src="/assets/banner-dark.svg?v=6" alt="iotec.dev" class="brand-banner"></div>
+      <div class="footer-tag">Indicadores profesionales para NT8</div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-col-title">Productos</div>
+        <a href="/es/#products">iotec Core</a>
+        <a href="/es/#products">iotec GEX</a>
+        <a href="/es/#pricing">Precios</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Soporte</div>
+        <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a>
+        <a href="/es/#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Legal</div>
+        <a href="/es/disclaimer.html">Disclaimer</a>
+        <a href="/es/terms.html">Términos</a>
+        <a href="/es/privacy.html">Privacidad</a>
+        <a href="/es/refunds.html">Reembolsos</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2026 iotec. NinjaTrader es marca registrada de NinjaTrader, LLC. iotec no está afiliado con NinjaTrader.</div>
+  </div>
+</footer>
+
+</body>
+</html>

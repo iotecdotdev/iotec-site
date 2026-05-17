@@ -45,6 +45,8 @@ a:hover { opacity: .8; }
 .nav-links a:hover { color: var(--text); opacity: 1; }
 .nav-links .nav-cta { background: var(--accent-2); color: #fff; padding: 7px 14px; border-radius: var(--radius-sm); }
 .nav-links .nav-cta:hover { background: #2b6cb0; opacity: 1; }
+.nav-links .nav-lang { color: var(--muted); font-size: .78rem; font-weight: 600; padding: 5px 9px; border: 1px solid var(--border); border-radius: 4px; letter-spacing: .05em; }
+.nav-links .nav-lang:hover { color: var(--text); border-color: var(--accent); opacity: 1; }
 
 /* ============== HERO ============== */
 .hero {
