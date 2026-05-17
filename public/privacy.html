@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — iotec</title>
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+<link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="brand"><img src="/assets/logo.svg" alt="iotec" class="brand-logo"><span>iotec</span></a>
+    <nav class="nav-links">
+      <a href="/#products">Products</a>
+      <a href="/#pricing">Pricing</a>
+      <a href="/#faq">FAQ</a>
+      <a href="mailto:soporte@iotec.dev" class="nav-cta">Support</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section legal">
+  <div class="container legal-container">
+    <a href="/" class="legal-back">← Back to home</a>
+    <h1>Privacy Policy</h1>
+    <p class="legal-updated">Last updated: 2026-05-17</p>
+
+    <h2>1. Who we are</h2>
+    <p>
+      iotec is an independent software developer building tools for NinjaTrader 8.
+      Contact: <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a>.
+    </p>
+
+    <h2>2. Data we collect</h2>
+    <h3>2.1 From the indicator (during normal use)</h3>
+    <ul>
+      <li><strong>License key</strong> — to validate your subscription.</li>
+      <li><strong>Device fingerprint</strong> — an anonymized SHA-256 hash derived from
+        your MachineGuid + BIOS serial + motherboard serial. This is opaque and
+        cannot be reversed to identify your computer's hardware details.</li>
+      <li><strong>Assembly hash</strong> — SHA-256 of the iotec DLL files installed,
+        for tamper detection.</li>
+      <li><strong>Public IP address</strong> — visible to us, like any web service.</li>
+      <li><strong>Timestamp</strong> of each activation and heartbeat check.</li>
+    </ul>
+
+    <h3>2.2 From the website / purchase</h3>
+    <ul>
+      <li><strong>Email and name</strong> — provided during checkout via Lemon Squeezy.</li>
+      <li><strong>Standard browser data</strong> — user agent, referrer, etc. when
+        you visit iotec.dev (no third-party trackers, no analytics scripts at this time).</li>
+    </ul>
+
+    <h2>3. Data we do NOT collect</h2>
+    <p>The indicator never sends to our servers:</p>
+    <ul>
+      <li>Your trading positions, open orders, P&L, or account balance.</li>
+      <li>The instruments you trade or watch.</li>
+      <li>Your chart configurations or workspace data.</li>
+      <li>Your broker credentials.</li>
+      <li>Any content of your trades or strategies.</li>
+    </ul>
+
+    <h2>4. Where data lives</h2>
+    <ul>
+      <li><strong>License server</strong>: hosted in Europe (Contabo, Germany).</li>
+      <li><strong>Email service</strong>: Brevo (Sendinblue, EU-based).</li>
+      <li><strong>Payment processor</strong>: Lemon Squeezy (US, GDPR-compliant Merchant of Record).</li>
+      <li><strong>CDN/DNS</strong>: Cloudflare.</li>
+      <li>Backups: Cloudflare R2 (encrypted at rest).</li>
+    </ul>
+
+    <h2>5. Local data on your computer</h2>
+    <p>
+      The indicator stores your license key locally at
+      <code>%APPDATA%\iotec\license*.dat</code>, encrypted with Windows DPAPI
+      tied to your user account. Only you, logged into your Windows session,
+      can decrypt it.
+    </p>
+
+    <h2>6. How we use data</h2>
+    <ul>
+      <li>To validate your license and prevent unauthorized use.</li>
+      <li>To send you license keys, support replies, and product updates.</li>
+      <li>To detect tampering or abuse.</li>
+      <li>To improve the product (aggregated, anonymized metrics).</li>
+    </ul>
+    <p>We do not sell, rent, or share your data with third parties for marketing.</p>
+
+    <h2>7. Your rights (GDPR / similar laws)</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request a copy of your data.</li>
+      <li>Request correction or deletion.</li>
+      <li>Withdraw consent.</li>
+      <li>Lodge a complaint with your local data protection authority.</li>
+    </ul>
+    <p>Email <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a> for any request.</p>
+
+    <h2>8. Retention</h2>
+    <ul>
+      <li>License + email: while your license is active + 12 months after last activity.</li>
+      <li>Server logs: 90 days.</li>
+      <li>Backups: 90 days.</li>
+    </ul>
+
+    <h2>9. Security</h2>
+    <p>
+      We use TLS for all network communication, encrypted backups, RSA-signed
+      license payloads, and access-restricted servers. No system is 100% secure;
+      we do our best.
+    </p>
+
+    <h2>10. Changes</h2>
+    <p>
+      We may update this policy. Material changes will be announced by email
+      to active licensees when possible.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>Questions or data requests: <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a></p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand"><img src="/assets/logo.svg" alt="iotec" class="brand-logo"> iotec</div>
+      <div class="footer-tag">Professional NT8 indicators</div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-col-title">Products</div>
+        <a href="/#products">iotec Core</a>
+        <a href="/#products">iotec GEX</a>
+        <a href="/#pricing">Pricing</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Support</div>
+        <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Legal</div>
+        <a href="/disclaimer.html">Risk Disclaimer</a>
+        <a href="/terms.html">Terms</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/refunds.html">Refunds</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">© 2026 iotec. NinjaTrader is a registered trademark of NinjaTrader, LLC. iotec is not affiliated with NinjaTrader.</div>
+  </div>
+</footer>
+
+</body>
+</html>

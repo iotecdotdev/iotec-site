@@ -152,6 +152,36 @@ a:hover { opacity: .8; }
 .footer-col a:hover { color: var(--accent); opacity: 1; }
 .footer-bottom { border-top: 1px solid var(--border); padding: 20px 0; color: var(--muted); font-size: .75rem; text-align: center; }
 
+/* ============== LEGAL PAGES ============== */
+.legal { padding: 60px 0 80px; }
+.legal-container { max-width: 760px; }
+.legal-back { display: inline-block; color: var(--muted); font-size: .82rem; margin-bottom: 24px; }
+.legal-back:hover { color: var(--accent); opacity: 1; }
+.legal h1 { font-size: 2.2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
+.legal-updated { color: var(--muted); font-size: .82rem; margin-bottom: 32px; }
+.legal h2 { font-size: 1.15rem; font-weight: 700; margin: 32px 0 12px; color: var(--text); }
+.legal h3 { font-size: 1rem; font-weight: 600; margin: 20px 0 8px; color: var(--text); }
+.legal p { color: var(--muted); margin-bottom: 14px; font-size: .92rem; }
+.legal ul, .legal ol { color: var(--muted); margin: 0 0 14px 22px; font-size: .92rem; }
+.legal ul li, .legal ol li { margin-bottom: 6px; }
+.legal strong { color: var(--text); font-weight: 600; }
+.legal code { background: var(--card); border: 1px solid var(--border); border-radius: 4px; padding: 1px 6px; font-size: .85em; color: var(--text); }
+.legal-hr { border: none; border-top: 1px solid var(--border); margin: 32px 0; }
+.legal-ack { padding: 18px; background: rgba(99, 179, 237, 0.06); border: 1px solid rgba(99, 179, 237, 0.2); border-radius: var(--radius-sm); color: var(--text); }
+
+/* ============== RISK WARNING BANNER en landing ============== */
+.risk-warning {
+  background: rgba(237, 137, 54, 0.08);
+  border-top: 1px solid rgba(237, 137, 54, 0.2);
+  border-bottom: 1px solid rgba(237, 137, 54, 0.2);
+  padding: 14px 0;
+  text-align: center;
+  font-size: .82rem;
+  color: var(--muted);
+}
+.risk-warning strong { color: var(--orange); }
+.risk-warning a { color: var(--orange); text-decoration: underline; }
+
 /* ============== RESPONSIVE ============== */
 @media (max-width: 720px) {
   .nav-links { gap: 18px; }
