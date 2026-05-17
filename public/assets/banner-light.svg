@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="174.46199mm"
+   height="24.184555mm"
+   viewBox="0 0 174.46199 24.184555"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75, 2025-12-25)"
+   sodipodi:docname="banner_fondo _blanco.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.35945918"
+     inkscape:cx="254.54907"
+     inkscape:cy="87.631648"
+     inkscape:window-width="2560"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4-9-5-3">
+      <rect
+         style="opacity:0.471545;fill:#ffcc00;fill-opacity:1;stroke:none;stroke-width:0.0264997"
+         id="rect5-2-1-6"
+         width="22.472609"
+         height="67.549232"
+         x="50.28474"
+         y="153.85141" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-17.769002,-136.40772)">
+    <g
+       id="g19"
+       transform="matrix(0.35705393,0,0,0.35705393,222.02588,58.995875)">
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:88.6943px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';fill:#1a1a1a;fill-opacity:1;stroke-width:0.256382"
+         x="-490.49612"
+         y="283.32812"
+         id="text97-64-4-0-1-1-14-5-34-6-4-5-5-2-0-4-0-4-3-4-6-8-3"
+         inkscape:export-filename="iotec-white-letters.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96"><tspan
+           sodipodi:role="line"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:88.6943px;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';fill:#1a1a1a;fill-opacity:1;stroke-width:0.256382"
+           x="-490.49612"
+           y="283.32812"
+           id="tspan1-5-9-1-5-8-1-1-6-9-2-4-9-3-8-9-3-2-7-2-0">iotec.dev</tspan></text>
+      <g
+         id="g17-9"
+         transform="translate(2472.8331,-7.6522019)">
+        <rect
+           style="fill:#ececec;fill-opacity:1;stroke:none;stroke-width:0.196357;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
+           id="rect1-2-58-5-0-1-7-8-74-4-7"
+           width="52.385578"
+           height="67.536652"
+           x="-3037.2341"
+           y="224.55798"
+           ry="30.331675"
+           rx="57.783756" />
+        <rect
+           style="fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:0.0258923"
+           id="rect2-5-1-4-1-9"
+           width="22.320023"
+           height="67.707443"
+           x="-3022.2014"
+           y="224.47231" />
+        <path
+           id="text97-64-4-0-1-1-14-5-3-7-1-9-2-5-4-2-8-1-6-0-2-5-2-2-2-3-4-8-4-9-2"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.1111px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';fill:#ff4200;fill-opacity:1;stroke-width:0.19609"
+           d="m 47.948706,153.85801 v 67.53605 h 27.14479 v -67.53605 z m 13.55651,6.78071 c 1.59236,0 2.95263,0.61085 4.08082,1.82893 1.14985,1.21813 1.7243,2.69392 1.7243,4.42742 0,1.71003 -0.56434,3.17234 -1.69204,4.39047 -1.12818,1.19469 -2.47834,1.79205 -4.04856,1.79205 -1.61451,0 -2.99549,-0.6082 -4.14534,-1.82633 -1.12819,-1.24153 -1.69204,-2.74164 -1.69204,-4.49854 0,-1.68658 0.56385,-3.12727 1.69204,-4.32195 1.1277,-1.19468 2.48798,-1.79205 4.08082,-1.79205 z m -4.54644,15.74359 h 9.08999 v 38.22834 h -9.08999 z"
+           clip-path="url(#clipPath4-9-5-3)"
+           transform="matrix(0.9943644,0,0,1.0029212,-3072.2127,70.15218)" />
+        <path
+           d="m -3044.8948,262.55515 v -8.45786 c 1.9674,-0.0942 3.4155,-0.50533 4.3439,-1.23344 0.9505,-0.72829 1.6691,-1.86775 2.1552,-3.41838 0.5085,-1.55063 0.7627,-4.1702 0.7627,-7.85872 0,-4.65184 0.1974,-7.8235 0.5968,-9.51505 0.3995,-1.71511 1.028,-3.07777 1.8904,-4.088 0.8841,-1.03375 2.1661,-1.8795 3.8462,-2.53734 1.7022,-0.65784 4.1452,-0.98671 7.3288,-0.98671 h 1.7576 v 8.45779 c -2.3655,0 -3.9132,0.14103 -4.6428,0.42305 -0.7296,0.25836 -1.271,0.69305 -1.6248,1.30391 -0.3321,0.61083 -0.4972,1.73852 -0.4972,3.38313 0,2.96023 -0.1347,6.26118 -0.3993,9.90277 -0.1782,2.37284 -0.785,4.49902 -1.8241,6.37856 -0.7739,1.38615 -2.1113,2.73708 -4.0123,4.05271 1.6137,0.98682 2.8958,2.24372 3.8463,3.77082 0.951,1.50359 1.581,3.41839 1.8904,5.74424 0.1348,1.01029 0.2887,4.29945 0.4669,9.86748 0.067,2.04402 0.1876,3.31267 0.3657,3.80608 0.2887,0.7283 0.8181,1.28042 1.5916,1.65634 0.796,0.3757 2.4097,0.56381 4.8415,0.56381 v 8.42264 h -1.7576 c -3.2052,0 -5.5817,-0.28202 -7.1295,-0.84579 -1.5473,-0.54039 -2.8077,-1.35093 -3.7804,-2.43161 -0.9726,-1.05729 -1.68,-2.40816 -2.1219,-4.05277 -0.4187,-1.62109 -0.6304,-4.42861 -0.6304,-8.42254 0,-4.46388 -0.2311,-7.47111 -0.696,-9.02172 -0.4427,-1.57409 -1.1497,-2.74877 -2.1224,-3.5241 -0.9505,-0.77529 -2.4318,-1.22171 -4.4435,-1.33921 z"
+           style="font-weight:bold;font-size:14.1111px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';fill:#1a1a1a;fill-opacity:1;stroke-width:0.196328"
+           id="path1-1-63-6-9-0-0-4-9-8-3-9-0-3-5-4-8-9-5-7-7-5-2" />
+        <path
+           d="m -2977.188,262.55515 v -8.45786 c -1.9674,-0.0942 -3.4156,-0.50533 -4.3439,-1.23344 -0.9505,-0.72829 -1.669,-1.86775 -2.1552,-3.41838 -0.5085,-1.55063 -0.7628,-4.1702 -0.7628,-7.85872 0,-4.65184 -0.1972,-7.8235 -0.5967,-9.51505 -0.3995,-1.71511 -1.028,-3.07777 -1.8904,-4.088 -0.8842,-1.03375 -2.1663,-1.8795 -3.8463,-2.53734 -1.7022,-0.65784 -4.1451,-0.98671 -7.3288,-0.98671 h -1.7575 v 8.45779 c 2.3653,0 3.9132,0.14103 4.6428,0.42305 0.7296,0.25836 1.271,0.69305 1.6248,1.30391 0.332,0.61083 0.4971,1.73852 0.4971,3.38313 0,2.96023 0.1348,6.26118 0.3995,9.90277 0.1781,2.37284 0.785,4.49902 1.824,6.37856 0.7738,1.38615 2.1113,2.73708 4.0123,4.05271 -1.6137,0.98682 -2.8958,2.24372 -3.8462,3.77082 -0.951,1.50359 -1.5811,3.41839 -1.8905,5.74424 -0.1347,1.01029 -0.2888,4.29945 -0.4668,9.86748 -0.067,2.04402 -0.1878,3.31267 -0.3658,3.80608 -0.2888,0.7283 -0.8182,1.28042 -1.5915,1.65634 -0.7961,0.3757 -2.4097,0.56381 -4.8416,0.56381 v 8.42264 h 1.7575 c 3.2054,0 5.5818,-0.28202 7.1296,-0.84579 1.5472,-0.54039 2.8077,-1.35093 3.7804,-2.43161 0.9727,-1.05729 1.6801,-2.40816 2.1219,-4.05277 0.4186,-1.62109 0.6304,-4.42861 0.6304,-8.42254 0,-4.46388 0.231,-7.47111 0.6959,-9.02172 0.4428,-1.57409 1.1498,-2.74877 2.1224,-3.5241 0.9505,-0.77529 2.4319,-1.22171 4.4435,-1.33921 z"
+           style="font-weight:bold;font-size:14.1111px;line-height:1.25;font-family:'Century Gothic';-inkscape-font-specification:'Century Gothic Bold';fill:#1a1a1a;fill-opacity:1;stroke-width:0.196328"
+           id="path1-1-63-6-9-0-0-4-9-8-3-9-0-3-6-0-8-2-0-6-3-8-9-3" />
+      </g>
+    </g>
+  </g>
+</svg>
