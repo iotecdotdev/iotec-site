@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>iotec — Indicadores profesionales de Order Flow y GEX para NinjaTrader 8</title>
-<meta name="description" content="Indicadores profesionales para NinjaTrader 8 construidos desde cero. Order Flow, footprint, gamma exposure. Sin suscripción a OrderFlow+.">
+<title>iotec — Indicadores profesionales de Order Flow para NinjaTrader 8</title>
+<meta name="description" content="Indicadores profesionales para NinjaTrader 8 construidos desde cero. Order Flow, footprint, imbalances. Sin suscripción a OrderFlow+.">
 <meta name="theme-color" content="#0f1117">
 <meta property="og:title" content="iotec — Indicadores profesionales para NT8">
-<meta property="og:description" content="Indicadores de Order Flow y Gamma Exposure profesionales. Construidos desde tick data. Motor nativo en C++.">
+<meta property="og:description" content="Indicadores de Order Flow profesionales. Construidos desde tick data. Motor nativo en C++.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://iotec.dev/es/">
 <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=9">
@@ -36,7 +36,7 @@
 <section class="hero">
   <div class="container">
     <div class="hero-eyebrow">Construido para traders serios</div>
-    <h1>Indicadores profesionales de Order Flow y Gamma Exposure<br>para NinjaTrader 8.</h1>
+    <h1>Indicadores profesionales de Order Flow<br>para NinjaTrader 8.</h1>
     <p class="hero-sub">
       Herramientas pro construidas desde tick data crudo — sin necesidad de suscripción a OrderFlow+.
       Motor nativo en C++. Protección de licencia multi-capa.
@@ -78,24 +78,6 @@
         <div class="product-foot">
           <div class="price"><span data-iotec-price="iotecCore.amount">$497</span> USD <span class="price-period" data-iotec-price="iotecCore.period">pago único</span></div>
           <a href="https://store.iotec.dev/buy/iotec-core" class="btn btn-primary">Comprar iotec Core</a>
-        </div>
-      </article>
-
-      <article class="product-card">
-        <div class="product-tag tag-purple">Servicio · Datos de Opciones</div>
-        <h3>iotec GEX</h3>
-        <p class="product-tagline">Gamma Exposure en tiempo real, como servicio. Indicador incluido, data alimentada en vivo desde nuestros servidores.</p>
-        <ul class="feature-list">
-          <li><strong>Niveles GEX</strong> calculados server-side desde cadenas de opciones en vivo</li>
-          <li><strong>Key levels</strong> destacados (zero gamma, walls)</li>
-          <li><strong>Filtros DTE</strong>: exacto o máximo días-a-expiración</li>
-          <li><strong>Actualización en tiempo real</strong> via tunnel cifrado</li>
-          <li><strong>Cobertura</strong>: SPY, QQQ, IWM y principales índices líquidos</li>
-          <li><strong>Indicador NT8 incluido</strong> — activado por tu license key de suscripción</li>
-        </ul>
-        <div class="product-foot">
-          <div class="price"><span data-iotec-price="iotecGEX.amount">$49</span> USD <span class="price-period" data-iotec-price="iotecGEX.period">/ mes</span></div>
-          <a href="https://store.iotec.dev/buy/iotec-gex" class="btn btn-primary">Empezar prueba gratis 7 días</a>
         </div>
       </article>
 
@@ -151,25 +133,19 @@
   <div class="container">
     <div class="section-head">
       <div class="eyebrow">Precios</div>
-      <h2>Herramientas con pago único. Servicios por suscripción. Paga por lo que usas.</h2>
+      <h2>Simple. Pago único. Paga una vez, es tuyo.</h2>
     </div>
 
-    <div class="pricing-grid">
-      <div class="pricing-card">
+    <div class="pricing-grid pricing-grid-single">
+      <div class="pricing-card pricing-featured">
         <div class="pricing-name">iotec Core</div>
         <div class="pricing-amount"><span data-iotec-price="iotecCore.amount">$497</span> <span class="pricing-period" data-iotec-price="iotecCore.period">pago único</span></div>
-        <div class="pricing-note">Suite completa de Order Flow. Updates de por vida. Lo compras una vez, es tuyo.</div>
+        <div class="pricing-note">Suite completa de Order Flow. Updates de por vida. Sin suscripción.</div>
         <a href="https://store.iotec.dev/buy/iotec-core" class="btn btn-primary btn-block">Comprar iotec Core</a>
-      </div>
-      <div class="pricing-card pricing-featured">
-        <div class="pricing-name">iotec GEX</div>
-        <div class="pricing-amount"><span data-iotec-price="iotecGEX.amount">$49</span> <span class="pricing-period" data-iotec-price="iotecGEX.period">/ mes</span></div>
-        <div class="pricing-note">Servicio GEX en tiempo real + indicador NT8 incluido. Prueba gratis 7 días sin tarjeta. Cancela cuando quieras.</div>
-        <a href="https://store.iotec.dev/buy/iotec-gex" class="btn btn-primary btn-block">Empezar prueba gratis 7 días</a>
       </div>
     </div>
 
-    <p class="pricing-foot">Precios en USD. Pagos procesados por Lemon Squeezy (Merchant of Record). IVA/impuestos calculados automáticamente por país. iotec Core es un pago único con updates de por vida. iotec GEX es una suscripción mensual que cubre el feed de opciones, la infraestructura del servidor y el acceso al indicador.</p>
+    <p class="pricing-foot">Precios en USD. Pagos procesados por Lemon Squeezy (Merchant of Record). IVA/impuestos calculados automáticamente por país. Updates de por vida incluidos.</p>
   </div>
 </section>
 
@@ -199,27 +175,12 @@
 
       <details class="faq-item">
         <summary>¿Qué pasa si el indicador no me funciona?</summary>
-        <p>Para iotec Core (pago único): envíanos correo en los primeros 14 días y procesamos reembolso completo sin preguntas. Para iotec GEX (suscripción): la prueba gratuita de 7 días te deja validar antes de cualquier cobro — sin tarjeta para empezar.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>¿Por qué iotec GEX es suscripción y no pago único?</summary>
-        <p>iotec GEX depende de un feed de opciones en vivo y cálculos server-side que mantenemos en operación continuamente. A diferencia de Core (que corre íntegramente en tu máquina después de comprarlo), GEX requiere infraestructura permanente — proveedores de data pagos, servidores de baja latencia, refresh diario del token de Schwab. La cuota mensual cubre todo eso. El indicador NT8 está incluido como parte del servicio.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>¿Qué pasa si cancelo iotec GEX?</summary>
-        <p>Tu acceso al servicio GEX se mantiene hasta el final del periodo facturado. El indicador queda instalado en NinjaTrader pero se reporta como inactivo — no fluyen datos. Puedes re-suscribirte cuando quieras y vuelve a funcionar al instante con la misma license key.</p>
-      </details>
-
-      <details class="faq-item">
-        <summary>¿Cómo funciona la prueba gratis de 7 días?</summary>
-        <p>Te registras, pegas tu license key en NinjaTrader, y listo. Sin tarjeta para empezar. Al día 7 te enviamos correo con link de pago para continuar. Si no pagas, tu acceso se detiene — punto. Sin cargos silenciosos, sin sorpresas.</p>
+        <p>Envíanos correo en los primeros 14 días después de la compra y procesamos reembolso completo sin preguntas.</p>
       </details>
 
       <details class="faq-item">
         <summary>¿Cómo recibo actualizaciones?</summary>
-        <p>Cuando publicamos una nueva versión, recibes correo con el changelog y link de descarga actualizado. Tu licencia sigue funcionando — sin re-compra para Core, sin interrupción del servicio para suscriptores de GEX.</p>
+        <p>Cuando publicamos una nueva versión, recibes correo con el changelog y link de descarga actualizado. Tu licencia sigue funcionando — sin re-compra.</p>
       </details>
 
       <details class="faq-item">
@@ -266,7 +227,6 @@
       <div class="footer-col">
         <div class="footer-col-title">Productos</div>
         <a href="#products">iotec Core</a>
-        <a href="#products">iotec GEX</a>
         <a href="#pricing">Precios</a>
         <a href="/es/changelog.html">Changelog</a>
       </div>
