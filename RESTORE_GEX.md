@@ -90,7 +90,7 @@ Mismos cambios, traducidos.
 (pending data licensing decision)":**
 
 ```bash
-cd D:\Desarrollo\iotec-site
+cd D:\Desarrollo\iotec\iotec-site
 git log --oneline  # encontrar el SHA del commit de retirada
 git revert <SHA>
 git push
