@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onboarding — iotec</title>
+<meta name="description" content="Guía de instalación paso a paso para tus indicadores iotec en NinjaTrader 8.">
+<meta name="robots" content="noindex, follow">
+<link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=9">
+<link rel="stylesheet" href="/assets/style.css?v=11">
+<style>
+  .onb-step { margin-bottom: 28px; }
+  .onb-step h3 { display: flex; align-items: center; gap: 12px; margin: 0 0 8px 0; }
+  .onb-step h3 .step-num {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 28px; height: 28px; border-radius: 50%;
+    background: #3182ce; color: #fff; font-size: .85rem; font-weight: 700;
+    flex-shrink: 0;
+  }
+  .onb-callout {
+    background: #fffbeb; border-left: 4px solid #f6ad55;
+    padding: 12px 16px; border-radius: 4px; margin: 16px 0;
+    font-size: .9rem;
+  }
+  .onb-callout.info { background: #ebf8ff; border-color: #3182ce; }
+  .onb-code {
+    background: #1a202c; color: #e2e8f0; padding: 10px 14px;
+    border-radius: 6px; font-family: Consolas, monospace; font-size: .88rem;
+    overflow-x: auto;
+  }
+  .tier-grid {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px; margin: 16px 0;
+  }
+  .tier-card {
+    background: #f7fafc; border: 1px solid #e2e8f0; border-radius: 8px;
+    padding: 16px;
+  }
+  .tier-card h4 { margin: 0 0 6px 0; color: #2d3748; }
+  .tier-card .tier-meta { font-size: .82rem; color: #718096; }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="/" class="brand"><img src="/assets/banner-dark.svg?v=9" alt="iotec.dev" class="brand-banner"></a>
+    <nav class="nav-links">
+      <a href="/#products">Productos</a>
+      <a href="/#pricing">Precios</a>
+      <a href="/#faq">FAQ</a>
+      <a href="/onboarding/" class="nav-lang">EN</a>
+      <a href="mailto:soporte@iotec.dev" class="nav-cta">Soporte</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section legal">
+  <div class="container legal-container">
+    <a href="/" class="legal-back">← Volver al inicio</a>
+    <h1>Onboarding — Instalación paso a paso</h1>
+    <p class="legal-updated">Última actualización: 2026-05-20</p>
+
+    <p>
+      Esta guía te lleva de cero a tener un indicador iotec funcionando en
+      NinjaTrader 8 en aproximadamente <strong>15 minutos</strong>. Funciona
+      tanto si llegaste por una <em>compra</em>, una <em>licencia trial</em> o un
+      <em>acceso beta</em>.
+    </p>
+
+    <h2>Tipos de licencia</h2>
+    <p>El email que recibiste te indica qué tipo de licencia tienes:</p>
+    <div class="tier-grid">
+      <div class="tier-card">
+        <h4>Purchase</h4>
+        <div class="tier-meta">Licencia permanente, sin fecha de vencimiento.</div>
+      </div>
+      <div class="tier-card">
+        <h4>Beta</h4>
+        <div class="tier-meta">90 días gratis + 50% de descuento permanente al lanzamiento.</div>
+      </div>
+      <div class="tier-card">
+        <h4>Trial</h4>
+        <div class="tier-meta">14 días para probarlo de verdad. Sin tarjeta, sin compromiso.</div>
+      </div>
+    </div>
+
+    <h2>Requisitos previos</h2>
+    <ul>
+      <li><strong>NinjaTrader 8</strong> instalado (gratuito desde
+        <a href="https://ninjatrader.com" target="_blank" rel="noopener">ninjatrader.com</a>).</li>
+      <li><strong>Windows 10 u 11</strong> con conexión estable a internet.</li>
+      <li>Para <strong>iotecGEX</strong> e <strong>iotecGEXLab</strong>:
+        cuenta <strong>Charles Schwab</strong> con acceso al Developer Portal y
+        una app registrada con permisos a <code>Trader API - Market Data</code>.</li>
+      <li>El email de bienvenida con tu <strong>license key</strong> y el botón
+        <em>Descargar binario</em>.</li>
+    </ul>
+
+    <h2>Pasos de instalación</h2>
+
+    <div class="onb-step">
+      <h3><span class="step-num">1</span>Descarga el binario</h3>
+      <p>
+        Haz clic en el botón <strong>Descargar binario</strong> del email que
+        recibiste. El link es único y válido mientras tu licencia siga activa.
+        Guarda el <code>.zip</code> en tu carpeta de descargas.
+      </p>
+      <div class="onb-callout info">
+        Si el link ya no funciona, escribe a
+        <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a> — te
+        regeneramos el acceso al instante.
+      </div>
+    </div>
+
+    <div class="onb-step">
+      <h3><span class="step-num">2</span>Cierra NinjaTrader 8 por completo</h3>
+      <p>
+        Incluye el icono de la bandeja del sistema (clic derecho → <em>Exit</em>).
+        Sin este paso los archivos pueden quedar bloqueados al copiar.
+      </p>
+    </div>
+
+    <div class="onb-step">
+      <h3><span class="step-num">3</span>Importa el indicador</h3>
+      <p>
+        Abre NinjaTrader 8 → <strong>Tools</strong> → <strong>Import</strong> →
+        <strong>NinjaScript Add-On</strong>. Selecciona el archivo
+        <code>.zip</code> descargado. NT8 lo procesa automáticamente y te puede
+        pedir reiniciar el editor.
+      </p>
+      <div class="onb-callout">
+        Si NT8 reporta errores de compilación, abre el
+        <em>NinjaScript Editor</em> (<kbd>F5</kbd> compila) y revisa la pestaña
+        <em>Errors</em>. La causa más común es no haber cerrado NT8 antes (paso 2).
+      </div>
+    </div>
+
+    <div class="onb-step">
+      <h3><span class="step-num">4</span>Activa tu licencia</h3>
+      <p>
+        Abre cualquier chart, agrega el indicador (<strong>Indicators</strong> →
+        buscar <strong>iotec…</strong>). La primera vez aparecerá un dialog
+        pidiendo:
+      </p>
+      <ul>
+        <li><strong>License key</strong>: cópiala tal cual del email
+          (sin espacios extra).</li>
+        <li><em>Solo para iotecGEX/iotecGEXLab</em>: <strong>Schwab App Key</strong>,
+          <strong>App Secret</strong> y <strong>Callback URL</strong> de tu app
+          en Schwab Developer Portal.</li>
+      </ul>
+    </div>
+
+    <div class="onb-step" id="schwab-oauth">
+      <h3><span class="step-num">5</span>OAuth Schwab (solo iotecGEX / iotecGEXLab)</h3>
+      <p>
+        Tras meter las credenciales se abre una <strong>ventana embebida</strong>
+        con el login de Schwab. Inicia sesión normal y autoriza la app. La
+        ventana se cierra sola al completar. Los tokens quedan cifrados en tu
+        equipo (AES-256), nunca pasan por nuestros servidores.
+      </p>
+      <div class="onb-callout">
+        Si la ventana no abre o reporta error de Edge/WebView2, instala el
+        runtime de WebView2 desde
+        <a href="https://developer.microsoft.com/microsoft-edge/webview2/" target="_blank" rel="noopener">microsoft-edge/webview2</a>.
+      </div>
+    </div>
+
+    <div class="onb-step">
+      <h3><span class="step-num">6</span>Listo — empieza a usarlo</h3>
+      <p>
+        Carga <strong>SPY</strong>, <strong>QQQ</strong>, <strong>/ES</strong> o
+        <strong>/NQ</strong> en un chart. Los niveles GEX (o las métricas
+        correspondientes a tu producto) aparecerán automáticamente. Configura
+        rango, DTE y filtros con clic derecho → <em>Properties</em>.
+      </p>
+    </div>
+
+    <h2>Soporte</h2>
+    <ul>
+      <li>Email: <a href="mailto:soporte@iotec.dev">soporte@iotec.dev</a> · 24-48 h hábiles.</li>
+      <li>Telegram (directo con Oscar): <strong>@oscar_iotec</strong></li>
+      <li>Si eres beta tester, también tienes acceso al grupo privado de Telegram (el link viene en tu email de bienvenida).</li>
+    </ul>
+
+    <h2>Confidencialidad</h2>
+    <p>
+      La license key es <strong>personal e intransferible</strong>. No la
+      compartas en capturas, redes o foros. Si necesitas activar el indicador
+      en otra máquina, escribe a soporte — hacemos el <em>device transfer</em>
+      sin costo (ver <a href="/support.html#device-transfer">política</a>).
+    </p>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-about">
+      <div class="footer-brand"><img src="/assets/banner-dark.svg?v=9" alt="iotec.dev" class="brand-banner"></div>
+      <div class="footer-tag">Indicadores profesionales para NinjaTrader 8</div>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <div class="footer-col-title">Recursos</div>
+        <a href="/support.html">Soporte</a>
+        <a href="/changelog.html">Changelog</a>
+        <a href="/#faq">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Legal</div>
+        <a href="/terms.html">Términos</a>
+        <a href="/privacy.html">Privacidad</a>
+        <a href="/refunds.html">Reembolsos</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copy container">© iotec.dev — Todos los derechos reservados.</div>
+</footer>
+
+</body>
+</html>
