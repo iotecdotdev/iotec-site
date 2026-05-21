@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>iotec — Indicadores profesionales de Order Flow para NinjaTrader 8</title>
-<meta name="description" content="Indicadores profesionales para NinjaTrader 8 construidos desde cero. Order Flow, footprint, imbalances. Sin suscripción a OrderFlow+.">
+<title>iotec — Indicadores profesionales de Order Flow y GEX para NinjaTrader 8</title>
+<meta name="description" content="Indicadores profesionales para NinjaTrader 8 construidos desde cero. Order Flow, footprint, gamma exposure. Sin suscripción a OrderFlow+.">
 <meta name="theme-color" content="#0f1117">
 <meta property="og:title" content="iotec — Indicadores profesionales para NT8">
-<meta property="og:description" content="Indicadores de Order Flow profesionales. Construidos desde tick data. Motor nativo en C++.">
+<meta property="og:description" content="Indicadores de Order Flow y Gamma Exposure profesionales. Construidos desde tick data. Motor nativo en C++.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://iotec.dev/es/">
 <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=9">
@@ -36,7 +36,7 @@
 <section class="hero">
   <div class="container">
     <div class="hero-eyebrow">Construido para traders serios</div>
-    <h1>Indicadores profesionales de Order Flow<br>para NinjaTrader 8.</h1>
+    <h1>Indicadores profesionales de Order Flow y Gamma Exposure<br>para NinjaTrader 8.</h1>
     <p class="hero-sub">
       Herramientas pro construidas desde tick data crudo — sin necesidad de suscripción a OrderFlow+.
       Motor nativo en C++. Protección de licencia multi-capa.
@@ -78,6 +78,24 @@
         <div class="product-foot">
           <div class="price"><span data-iotec-price="iotecCore.amount">$497</span> USD <span class="price-period" data-iotec-price="iotecCore.period">pago único</span></div>
           <a href="https://store.iotec.dev/buy/iotec-core" class="btn btn-primary">Comprar iotec Core</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-tag tag-purple">Indicador · BYO Schwab</div>
+        <h3>iotec GEX</h3>
+        <p class="product-tagline">Gamma Exposure, Delta Exposure y Convexidad para NinjaTrader 8, alimentado por tus propias credenciales del Charles Schwab Developer Portal.</p>
+        <ul class="feature-list">
+          <li><strong>Niveles GEX, DEX, CVX</strong> calculados desde cadenas de opciones en vivo</li>
+          <li><strong>Key levels</strong> destacados (zero gamma, max pain, walls)</li>
+          <li><strong>Filtros DTE</strong>: exacto o máximo días-a-expiración</li>
+          <li><strong>Barras de gradiente histórico</strong> (1/5/10/15/30 min)</li>
+          <li><strong>Cobertura</strong>: SPY, QQQ, SPX, NDX, ES, NQ</li>
+          <li><strong>Modelo BYO</strong>: tu clave Schwab, tu data. Sin suscripción de data, sin cuotas mensuales.</li>
+        </ul>
+        <div class="product-foot">
+          <div class="price"><span data-iotec-price="iotecGEX.amount">$129</span> USD <span class="price-period" data-iotec-price="iotecGEX.period">pago único</span></div>
+          <a href="https://buy.iotec.dev/l/iotecGEX" class="btn btn-primary">Comprar iotec GEX</a>
         </div>
       </article>
 
@@ -133,19 +151,25 @@
   <div class="container">
     <div class="section-head">
       <div class="eyebrow">Precios</div>
-      <h2>Simple. Pago único. Paga una vez, es tuyo.</h2>
+      <h2>Simple, pago único. Cómpralo una vez, es tuyo para siempre.</h2>
     </div>
 
-    <div class="pricing-grid pricing-grid-single">
-      <div class="pricing-card pricing-featured">
+    <div class="pricing-grid">
+      <div class="pricing-card">
         <div class="pricing-name">iotec Core</div>
         <div class="pricing-amount"><span data-iotec-price="iotecCore.amount">$497</span> <span class="pricing-period" data-iotec-price="iotecCore.period">pago único</span></div>
-        <div class="pricing-note">Suite completa de Order Flow. Updates de por vida. Sin suscripción.</div>
-        <a href="https://store.iotec.dev/buy/iotec-core" class="btn btn-primary btn-block">Comprar iotec Core</a>
+        <div class="pricing-note">Suite completa de Order Flow. Updates de por vida. Lo compras una vez, es tuyo.</div>
+        <a href="https://buy.iotec.dev/l/iotecCore" class="btn btn-primary btn-block">Comprar iotec Core</a>
+      </div>
+      <div class="pricing-card pricing-featured">
+        <div class="pricing-name">iotec GEX</div>
+        <div class="pricing-amount"><span data-iotec-price="iotecGEX.amount">$129</span> <span class="pricing-period" data-iotec-price="iotecGEX.period">pago único</span></div>
+        <div class="pricing-note">Niveles GEX/DEX/CVX para NT8 usando tus propias credenciales del Schwab Developer Portal. Sin suscripción de data.</div>
+        <a href="https://buy.iotec.dev/l/iotecGEX" class="btn btn-primary btn-block">Comprar iotec GEX</a>
       </div>
     </div>
 
-    <p class="pricing-foot">Precios en USD. Pagos procesados por Lemon Squeezy (Merchant of Record). IVA/impuestos calculados automáticamente por país. Updates de por vida incluidos.</p>
+    <p class="pricing-foot">Precios en USD. Pagos procesados por Gumroad (Merchant of Record). IVA/impuestos calculados automáticamente por país. Ambos productos son pago único con updates de por vida. iotec GEX usa modelo BYO (Bring Your Own): tú aportas tus propias credenciales gratuitas del Charles Schwab Developer Portal — tu data, tu cuenta.</p>
   </div>
 </section>
 
@@ -175,7 +199,17 @@
 
       <details class="faq-item">
         <summary>¿Qué pasa si el indicador no me funciona?</summary>
-        <p>Envíanos correo en los primeros 14 días después de la compra y procesamos reembolso completo sin preguntas.</p>
+        <p>Tanto iotec Core como iotec GEX son pago único con 14 días de reembolso sin preguntas. Nos escribes y lo procesamos.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Necesito una cuenta Schwab para iotec GEX?</summary>
+        <p>Sí. iotec GEX usa la Charles Schwab Developer API para acceder a tus propios datos de cadenas de opciones (modelo BYO). Necesitas una cuenta de broker y una app de Developer registrada (gratuita). Durante el onboarding te guiamos el OAuth — el indicador abre una ventana de login embebida la primera vez.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>¿Por qué BYO y no suscripción con data incluida?</summary>
+        <p>Redistribuir data de Schwab comercialmente viola sus TOS. Podríamos licenciar OPRA o Polygon y pasar ese costo como suscripción, pero eso triplica el precio y agrega otra cuenta mensual a tu vida. Como la mayoría de traders de opciones ya tienen cuenta Schwab, BYO mantiene el precio bajo y tu data es tuya.</p>
       </details>
 
       <details class="faq-item">
@@ -227,6 +261,7 @@
       <div class="footer-col">
         <div class="footer-col-title">Productos</div>
         <a href="#products">iotec Core</a>
+        <a href="#products">iotec GEX</a>
         <a href="#pricing">Precios</a>
         <a href="/es/changelog.html">Changelog</a>
       </div>

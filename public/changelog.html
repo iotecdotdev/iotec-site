@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Changelog — iotec</title>
-<meta name="description" content="Version history and release notes for iotec Core.">
+<meta name="description" content="Version history and release notes for iotec Core and iotec GEX.">
 <link rel="icon" type="image/x-icon" href="/assets/favicon.ico?v=9">
 <link rel="stylesheet" href="/assets/style.css?v=11">
 </head>
@@ -32,8 +32,34 @@
     <p>
       What's new in each iotec product. Existing customers receive a notification
       email when a new version ships. <strong>Updates are always free</strong> —
-      no re-purchase needed.
+      no re-purchase for iotec Core, no service interruption for iotec GEX subscribers.
     </p>
+
+    <h2>iotec GEX</h2>
+
+    <h3>v0.3.1 — 2026-05-17</h3>
+    <ul>
+      <li><strong>UX polish.</strong> The "API Token" field in the indicator settings is no longer visible — your license key is used automatically for the GEX service. One secret, one paste.</li>
+      <li><strong>Indicator status in chart title.</strong> The indicator name now shows clear states: <code>(Loading...)</code>, <code>(Market closed)</code>, <code>(API offline — retrying)</code>, <code>(HTTP error — check token)</code>. No more guessing what's happening.</li>
+      <li>Chart title now refreshes correctly when market is closed (no longer stuck on "Loading...").</li>
+    </ul>
+
+    <h3>v0.3.0 — 2026-05-17</h3>
+    <ul>
+      <li><strong>One secret for everything.</strong> Your license key now also serves as the API token internally. No more separate token to paste — just the license key.</li>
+      <li>Switched to BYO (Bring Your Own) Schwab credentials model: one-time purchase, you bring your own free Schwab Developer Portal app.</li>
+    </ul>
+
+    <h3>v0.2.0 — 2026-05-17</h3>
+    <ul>
+      <li>Internal: extracted HTTP, JSON parsing, and credential encryption into the obfuscated DLL. Better protection of the data flow.</li>
+    </ul>
+
+    <h3>v0.1.0 — 2026-05-16</h3>
+    <ul>
+      <li>Initial release. Real-time Gamma Exposure levels on NinjaTrader 8 charts, fed from a server-side calculation using live options data.</li>
+      <li>Key levels (zero gamma, call wall, put wall), historical GEX bars, convexity histogram, futures conversion for ES/NQ/GC.</li>
+    </ul>
 
     <h2>iotec Core</h2>
 
@@ -92,6 +118,7 @@
       <div class="footer-col">
         <div class="footer-col-title">Products</div>
         <a href="/#products">iotec Core</a>
+        <a href="/#products">iotec GEX</a>
         <a href="/#pricing">Pricing</a>
         <a href="/changelog.html">Changelog</a>
       </div>
